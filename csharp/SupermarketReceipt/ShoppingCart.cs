@@ -94,6 +94,9 @@ namespace SupermarketReceipt
                             }
                     }
 
+                    if (discount != null)
+                        receipt.AddDiscount(discount);
+
                     //if (offer.OfferType == SpecialOfferType.ThreeForTwo)
                     //{
                     //    x = 3;
@@ -124,8 +127,8 @@ namespace SupermarketReceipt
                     //    discount = new Discount(p, x + " for " + PrintPrice(offer.Argument), -discountTotal);
                     //}
 
-                    if (discount != null)
-                        receipt.AddDiscount(discount);
+                    //if (discount != null)
+                    //    receipt.AddDiscount(discount);
                 }
             }
         }
